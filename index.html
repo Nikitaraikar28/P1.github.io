@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <style>
+        #one:hover{
+background-color: aquamarine;
+        }
+        .A{
+            background-color: rgb(95, 182, 192);
+        }
+        .B{
+            background-color: rgb(95, 182, 192);
+        }
+    </style>
+</head>
+
+
+<body>
+    
+<form action="thankyou.html" >
+    <fieldset class="A">
+        <legend>Personal details</legend>
+        <label for="sal">Saluataion</label>
+        <br>
+         <select name="sal" id="sal">
+            <option value="None">--None--</option>
+            <option value="Miss.">Miss.</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Dr.">Dr.</option>
+        </select>
+        <br>
+
+<label for="fname">Name</label>
+<input type="text" required  placeholder="First name" id="fname" name="name">
+<br><br>
+
+<label for="mname">Middle Name</label>
+<input type="text" required  placeholder="Middle name" id="mname" name="name">
+<br><br>
+
+<label for="lname">Last Name</label>
+<input type="text" required  placeholder="Last name" id="lname" name="name">
+<br><br>
+
+
+<label for="email">Email</label>
+<input type="email" required  id="email" name="email">
+<br><br>
+
+
+<label for="dob">DOB</label>
+<input type="date" required id="dob" name="dob">
+<br><br>
+
+<label for="conatct" Contact>Contact</label>
+<input type="tel" required name="conatct" id="conatct" pattern="[6-9]{1}[0-9]{9}">
+<br>
+
+<label for="add">Address</label>
+<textarea name="add" id="add" cols="30" rows="10"></textarea>
+<br>
+
+
+</fieldset>
+
+<fieldset class="B">
+<legend>Educational details</legend> 
+
+<label for="dept"> Department</label>
+<br><br>
+
+<input type="radio" id="CS" name="dept">
+<label for="CS"> CS</label>
+
+<input type="radio" id="CIVIL" name="dept">
+<label for="CIVIL"> CIVIL</label>
+
+<input type="radio" id="IS" name="dept">
+<label for="IS"> IS</label>
+<br><br>
+
+
+<label for="yog">YOG</label>
+<input list="YO" id="yog" name="yog" >
+<datalist id="YO"> 
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+
+</datalist>
+<br><br>
+
+
+    
+   <label for="SKILLS">SKILLS</label>
+   <br><br>
+
+   <input type="checkbox" id="C" name="C" >
+   <label for="C"> C</label>
+   <br><br>
+
+   <input type="checkbox" id="C++" name="C++">
+   <label for="C++"> C++</label>
+   <br><br>
+
+   <input type="checkbox" id="HTML" name="HTML">
+   <label for="HTML"> HTML</label>
+   <br><br>
+
+   <input type="checkbox" id="CSS" name="CSS">
+   <label for="CSS"> CSS</label>
+   <br><br>
+   </fieldset>
+   <input type="submit" id="one">
+    
+
+</form>  
+</body>
+</html>
